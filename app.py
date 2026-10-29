@@ -40,5 +40,5 @@ def data():
 @app.post("/fault/{mode}")
 def set_fault(mode : str):
     STATE["fault"] = mode
-    logging.info("fault set to %s", mode)
+    
     return {"fault_now": mode}
