@@ -10,8 +10,7 @@ load_dotenv()
 tools = [read_logs,get_metrics]
 
 llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-flash",
-    
+    model="gemini-3.5-flash-lite",
 )
 
 llm_with_tools = llm.bind_tools(tools)
